@@ -1,0 +1,40 @@
+.presentation {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    .location {
+        padding: 10px;
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        font-weight: 600;
+        i {
+            margin: 0px 15px;
+        }
+    }
+
+    .explications {
+        width: 100%;
+        padding: 5vw 10vw 10vw 10vw;
+
+        h1 {
+            padding: 15px;
+        }
+    }
+
+
+    .explorer {
+        cursor: pointer;
+        margin-bottom: 35px;
+        font-size: 1em;
+        color: white;
+        background-color: purple;
+        border: none;
+        padding: 15px;
+        border-radius: 30px;
+    }
+}
