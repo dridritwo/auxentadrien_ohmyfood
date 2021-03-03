@@ -1,42 +1,46 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .shri {
-    font-family: 'Shrikhand', cursive;
-  }
+  font-family: "Shrikhand", cursive;
+}
 
 .bg-primary {
-    background-color: $primary;
+  background-color: $primary;
 }
 .bg-secondary {
-    background-color: $secondary;
+  background-color: $secondary;
 }
 .bg-tertiary {
-    background-color: $tertiary;
+  background-color: $tertiary;
 }
 
 .flex-vertical-center {
-    @include flex(column, center, center);
+  @include flex(column, center, center);
 }
 .flex-vertical-start {
-    @include flex(column, center, start);
+  @include flex(column, center, start);
 }
 .flex-horizontal {
-    @include flex(row);
+  @include flex(row);
 }
 .flex-horizontal-between {
-    @include flex(row, space-between, center);
-    width: 100%;
+  @include flex(row, space-between, center);
+  width: 100%;
 }
 
 .standard-padding {
-    padding: $standard-padding;
+  padding: $standard-padding;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
