@@ -15,9 +15,24 @@
             width: 100%;
             height: calc(100% - 70px);
             overflow: hidden;
+            position: relative;
             @include flex(row, center, center);
             img {
                 width: 100%;
+            }
+        }
+        figure.nouveau {
+            &::after {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                content: 'Nouveau';
+                color: darken($tertiary, 35);
+                background: $tertiary;
+                font-weight: 600;
+                padding: 5px 10px;
+                font-size: 0.9rem;
+                border-radius: 3px;
             }
         }
         .text-container {

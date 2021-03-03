@@ -1,0 +1,8 @@
+@keyframes loading{
+    0% {
+        transform: scaleX(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
