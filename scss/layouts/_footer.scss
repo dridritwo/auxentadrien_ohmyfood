@@ -1,9 +1,24 @@
 footer {
-
-    background-color: rgb(39, 39, 39);
-    color: white;
-    padding: 10px;
+    * {
+        max-width: $max-width-desk;
+        margin: auto;
+    }
+    @include color(rgb(39, 39, 39));
+    padding: 30px;
+    .footer-div {
+        margin-bottom: 10px;
+        i {
+            padding-right: 5px;
+            width: 30px;
+        }
+    }
     h1 {
-        margin: 10px 0px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    a {
+        color: unset;
+        text-decoration: none;
     }
 }

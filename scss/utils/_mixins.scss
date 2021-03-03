@@ -1,0 +1,32 @@
+@mixin color($background-color: white) {
+    background: $background-color;
+    @if ( lightness($background-color) > 70% ) {
+        color: black;
+    } @else {
+        color: white;
+    }
+}
+
+@mixin beforeFonc($number) {
+    &::before {
+        content: $number;
+        position: relative;
+        top: 0px;
+        left: -13px;
+        @include color($primary);
+        height: 10px;
+        width: 10px;
+        padding: 10px;
+        line-height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
+
+@mixin flex($direction: row, $justify-content: start, $align: start, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

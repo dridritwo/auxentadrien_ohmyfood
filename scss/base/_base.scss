@@ -18,3 +18,21 @@
 .bg-tertiary {
     background-color: $tertiary;
 }
+
+.flex-vertical-center {
+    @include flex(column, center, center);
+}
+.flex-vertical-start {
+    @include flex(column, center, start);
+}
+.flex-horizontal {
+    @include flex(row);
+}
+.flex-horizontal-between {
+    @include flex(row, space-between, center);
+    width: 100%;
+}
+
+.standard-padding {
+    padding: $standard-padding;
+}

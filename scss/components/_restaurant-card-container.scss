@@ -1,0 +1,54 @@
+.restaurant-card-container {
+    width: 100%;
+    gap: 30px;
+    &__restaurant-card {
+        width: 90vw;
+        max-width: 600px;
+        min-width: 270px;
+        height: 60vw;
+        max-height: 400px;
+        min-height: 200px;
+        border-radius: 15px;
+        @include color(white);
+        overflow: hidden;
+        figure {
+            width: 100%;
+            height: calc(100% - 70px);
+            overflow: hidden;
+            @include flex(row, center, center);
+            img {
+                width: 100%;
+            }
+        }
+        .text-container {
+            width: 100%;
+            height: 70px;
+            padding: 0px 2vw;
+            h1, p {
+                font-size: 1.2rem;
+            }
+        }
+        i {
+            cursor: pointer;
+            font-size: 30px;
+        }
+        .coeur-plein {
+            position: relative;
+            color: $primary;
+            
+            .coeur-vide {
+                position: absolute;
+                color: black;
+                background: white;
+                top: 0px;
+                left: 0px;
+                opacity: 1;
+                transition: opacity 250ms;
+                &:hover {
+                    opacity: 0;
+                    transition: opacity 250ms;
+                }
+            }
+        }
+    }
+}

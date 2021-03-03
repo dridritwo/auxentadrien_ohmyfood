@@ -1,0 +1,50 @@
+.btn {
+    cursor: pointer;
+    margin-bottom: 35px;
+    font-size: 1em;
+    font-weight: bolder;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: 4px 9px 14px -8px rgba(0,0,0,.5);
+
+    &--purple-gradient {
+        color: white;
+        background: $purple-gradient;
+    }
+
+    &--bg-light-grey {
+        @include color($light-grey);
+    }
+
+    &--fonc {
+        padding: 30px 0px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 345px;
+        min-width: 260px;
+        text-align: start;
+        &:active, &:focus {
+            i {
+                color: $primary
+            }
+        }
+        i {
+            color: darken($grey, 20);
+            margin: 0px 20px 0px 0px;
+            font-size: x-large;
+            position: relative;
+            top: 4px;
+            left: 0px;
+        }
+        &-1 {
+            @include beforeFonc('1');
+        }
+        &-2 {
+            @include beforeFonc('2');
+        }
+        &-3 {
+            @include beforeFonc('3');
+        }
+    }
+}

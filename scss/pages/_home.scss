@@ -1,5 +1,6 @@
+
 .presentation {
-    background-color: rgb(231, 231, 231);
+    background-color: $light-grey;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,33 +10,42 @@
     
 
     .location {
-        padding: 10px;
-        background-color: rgb(216, 216, 216);
+        padding: 20px;
+        background-color: $grey;
         width: 100%;
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 0.96rem;
         i {
-            margin: 0px 15px;
+            position: relative;
+            left: -25px;
+            top: 0px;
         }
     }
 
     .explications {
         width: 100%;
-        padding: 5vw 10vw 10vw 10vw;
+        padding: 40px 10vw 40px 10vw;
 
         h1 {
             padding: 15px;
         }
     }
 
+}
 
-    .explorer {
-        cursor: pointer;
-        margin-bottom: 35px;
-        font-size: 1em;
-        color: white;
-        background-color: purple;
-        border: none;
-        padding: 15px;
-        border-radius: 30px;
+.fonctionnement {
+    padding: 40px 50px;
+    max-width: $max-width-desk;
+    margin: auto;
+    h1 {
+        margin-bottom: $standard-title-margin;
+    }
+}
+
+.restaurants {
+    @include color($light-grey);
+    > h1 {
+        max-width: $max-width-desk;
+        margin: auto auto $standard-title-margin auto;
     }
 }
