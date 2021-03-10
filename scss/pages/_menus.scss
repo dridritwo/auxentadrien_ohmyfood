@@ -26,6 +26,8 @@
         background-color: $light-grey;
         border-radius: 35px 35px 0 0;
         padding: 4vw;
+        max-width: $max-width-desk;
+        margin: auto;
 
         section {
             margin-top: 20px;
