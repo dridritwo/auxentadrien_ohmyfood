@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/19c651280f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Oh My Food - Le délice des sens</title>
+    <meta
+      name="description"
+      content="Oh My Food project for openclassrooms. Project 3 of web dev path. Menu page."
+    />
+  </head>
+  <body class="menus">
+    <header>
+      <a class="back-link" href="../index.html"
+        ><i class="fas fa-arrow-left"></i
+      ></a>
+      <h1 class="shri">ohmyfood</h1>
+    </header>
+
+    <div class="menu-image">
+      <picture class="menu-picture">
+        <img src="/images/le-delice-des-sens.jpg" alt="image menu" />
+      </picture>
+    </div>
+
+    <main>
+      <div class="flex-horizontal-between nom-menu">
+        <h1 class="shri">Le délice des sens</h1>
+        <i class="fas fa-heart coeur-plein"
+          ><i class="far fa-heart coeur-vide"></i
+        ></i>
+      </div>
+
+      <section class="entrees">
+        <h2>Entrées</h2>
+
+        <div class="plats-container">
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom">Tartare de thon
+                </b>
+              <p class="plat__description">Assaisonné au yuzu </p>
+            </div>
+            <span class="plat__prix"> 25€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Bouchée de homard croustillant 
+                 </b>
+              <p class="plat__description">Et sa farandole de petits légumes</p>
+            </div>
+            <span class="plat__prix"> 35€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Velouté de cèpes 
+                 </b>
+              <p class="plat__description">
+                Aux truffes
+              </p>
+            </div>
+            <span class="plat__prix"> 20€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="plats">
+        <h2>Plats</h2>
+
+        <div class="plats-container">
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Poulet rôti aux herbes de Provence  </b>
+              <p class="plat__description">
+                Et sa crème de truffe
+              </p>
+            </div>
+            <span class="plat__prix"> 40€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Langouste rôtie 
+                 </b>
+              <p class="plat__description">
+                Et ses légumes de saison
+              </p>
+            </div>
+            <span class="plat__prix"> 35€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Côte de boeuf Angus 
+                 </b>
+              <p class="plat__description">Et sa purée de panais</p>
+            </div>
+            <span class="plat__prix"> 44€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="desserts">
+        <h2>Desserts</h2>
+
+        <div class="plats-container">
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Farandole de desserts
+                 </b>
+              <p class="plat__description">Du chef</p>
+            </div>
+            <span class="plat__prix"> 18€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Crème brulée 
+                </b>
+              <p class="plat__description">
+                Revisitée
+              </p>
+            </div>
+            <span class="plat__prix"> 22€ </span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+
+          <div class="plat">
+            <div class="plat__texte">
+              <b class="plat__nom"> Tiramisu 
+                </b>
+              <p class="plat__description">
+                À la noisette
+              </p>
+            </div>
+            <span class="plat__prix"> 23€</span>
+            <div class="plat__btn"><i class="fas fa-check-circle"></i></div>
+          </div>
+        </div>
+      </section>
+      <div class="bouton">
+        <button class="btn btn--purple-gradient btn--commander">
+          Commander
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-div">
+        <h1 class="shri">ohmyfood</h1>
+      </div>
+      <div class="footer-div">
+        <a href=""
+          ><i class="fas fa-utensils"></i> <b>Proposer un restaurant</b></a
+        >
+      </div>
+      <div class="footer-div">
+        <a href=""
+          ><i class="fas fa-hands-helping"></i> <b>Devenir un partenaire</b></a
+        >
+      </div>
+      <div class="footer-div"><a href="">Mentions légales</a></div>
+      <div class="footer-div"><a href="">Contact</a></div>
+    </footer>
+  </body>
+</html>

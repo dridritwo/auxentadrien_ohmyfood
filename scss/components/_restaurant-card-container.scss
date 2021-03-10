@@ -47,23 +47,25 @@
             cursor: pointer;
             font-size: 30px;
         }
-        .coeur-plein {
-            position: relative;
-            color: $primary;
-            
-            .coeur-vide {
-                position: absolute;
-                color: black;
-                background: white;
-                top: 0px;
-                left: 0px;
-                opacity: 1;
-                transition: opacity 250ms;
-                &:hover {
-                    opacity: 0;
-                    transition: opacity 250ms;
-                }
-            }
+      
+    }
+}
+
+.coeur-plein {
+    position: relative;
+    color: $primary;
+    
+    .coeur-vide {
+        position: absolute;
+        color: black;
+        background: white;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+        transition: opacity 250ms;
+        &:hover {
+            opacity: 0;
+            transition: opacity 250ms;
         }
     }
 }

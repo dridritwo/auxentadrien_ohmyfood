@@ -3,7 +3,7 @@ footer {
         max-width: $max-width-desk;
         margin: auto;
     }
-    @include color(rgb(39, 39, 39));
+    @include color($dark);
     padding: 30px;
     .footer-div {
         margin-bottom: 10px;

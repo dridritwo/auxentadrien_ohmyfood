@@ -3,10 +3,13 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/animations";
+@import "./utils/loading-animation";
+@import "./utils/menus-animation";
 @import "./base/base";
 @import "./components/buttons";
 @import "./components/restaurant-card-container";
+@import "./components/menu-plat";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./pages/home";
+@import "./pages/menus";

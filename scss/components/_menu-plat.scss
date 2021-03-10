@@ -1,0 +1,85 @@
+.plat {
+    background: white;
+    padding: 15px;
+    margin: 5vw 0;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 4px 9px 14px -8px rgba(0,0,0,.5);
+    &:hover {
+        .plat__texte {
+            width: calc(100% - 80px);
+            transition: all 0.4s cubic-bezier(.32,.6,.23,.92);
+        }
+        .plat__prix {
+            transform: translateX(-50px);
+            transition: all 0.4s cubic-bezier(.32,.6,.23,.99);
+        }
+        .plat__btn {
+            transform-origin: 100% 50%;
+            transform: translateX(5px);
+            transition: all 0.4s cubic-bezier(.17,.67,.23,.99);
+        }
+        .fa-check-circle {
+            transform-origin: 50% 50%;
+            transform: rotate(360deg);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+
+    &__texte {
+        width: calc(100% - 30px);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    &__description {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__nom {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    &__prix {
+        position: absolute;
+        bottom: 15px;
+        right: 13px;
+        transition: all 0.4s ease-in-out;
+        font-weight: bold;
+    }
+
+
+    &__btn {
+        transform-origin: 100% 50%;
+        transform: translateX(100%);
+        transition: all 0.4s cubic-bezier(.17,.67,.23,.99);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: $tertiary;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 20px;
+        .fa-check-circle {
+            transform-origin: 50% 50%;
+            transform: rotate(0deg);
+        }
+    }
+   
+}
