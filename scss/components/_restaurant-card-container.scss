@@ -1,6 +1,11 @@
 .restaurant-card-container {
     width: 100%;
+    max-width: $max-width-desk;
+    margin: auto;
     gap: 30px;
+    h2 {
+        width: 100%;
+    }
     &__restaurant-card {
         width: 90vw;
         max-width: 600px;

@@ -29,7 +29,7 @@
 
     &--purple-gradient {
         color: white;
-        background: $purple-gradient;
+        background: $primary-gradient;
         position: relative;
         opacity: 1;
         z-index: 1;
@@ -43,7 +43,7 @@
     &--purple-gradient::after {
         content: '';
         color: white;
-        background: $purple-gradient-lighten;
+        background: $primary-gradient-lighten;
         position: absolute;
         top: 0;
         right: 0;
